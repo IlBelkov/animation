@@ -1,0 +1,50 @@
+.page
+  
+  &__wrapper
+    display flex
+    width 100%
+    position fixed
+    top 0
+    left 0
+  
+.section
+  flex-direction column
+  min-width 100%
+  display flex
+  justify-content center
+  background #fffee1
+  height 100vh
+  align-items center
+
+  &:nth-child(2)
+    background #e2fcff
+  &:nth-child(3)
+    background #d0eaff
+  &:nth-child(4)
+    background #fce8f4
+  
+  &__content
+    max-width 800px
+    margin-bottom 40px
+    text-align center
+  
+  &__title
+    font-size 4em
+    color #111
+
+  &__text
+    font-size 1.3em
+    line-height 1.4em
+    color #111
+  
+  &__animation-wrapper
+    display flex
+    justify-content center
+
++below(md-breakpoint)
+  .page
+    &__wrapper
+      position absolute
+      flex-direction column
+      height auto
+      transform none !important
